@@ -90,3 +90,31 @@ Blockly.Python['next'] = function(block) {
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.Python.ORDER_NONE];
 };
+
+Blockly.Python['alexnet'] = function(block) {
+  var checkbox_pretrained = block.getFieldValue('pretrained') == 'TRUE';
+  // TODO: Assemble Python into code variable.
+
+  var txt = "False";
+  if (checkbox_pretrained) {
+    txt = 'True'
+  }
+
+  var code = 'torchvision.models.alexnet(pretrained='+ txt + ')';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.Python.ORDER_NONE];
+};
+
+Blockly.Python['resnet18'] = function(block) {
+  var checkbox_pretrained = block.getFieldValue('pretrained') == 'TRUE';
+  // TODO: Assemble Python into code variable.
+
+  var txt = "False";
+  if (checkbox_pretrained) {
+    txt = 'True'
+  }
+
+  var code = 'torchvision.models.resnet18(pretrained='+ txt + ')';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.Python.ORDER_NONE];
+};

@@ -125,3 +125,31 @@ Blockly.Blocks['next'] = {
  this.setHelpUrl("");
   }
 };
+
+
+Blockly.Blocks['alexnet'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Alexnet")
+        .appendField("trained")
+        .appendField(new Blockly.FieldCheckbox("TRUE"), "pretrained");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+
+Blockly.Blocks['resnet18'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Resnet18")
+        .appendField("trained")
+        .appendField(new Blockly.FieldCheckbox("TRUE"), "pretrained");
+    this.setOutput(true, null);
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
