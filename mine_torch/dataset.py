@@ -8,9 +8,9 @@ transform = transforms.Compose([transforms.ToTensor(),
                                 transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 
 def Train_Set(dataset):
-    if dataset == 'numbers':
+    if dataset == 'objects':
         dataset = CIFAR10(root='./data', train=True, download=True, transform=transform)
-    elif dataset == 'objects':
+    elif dataset == 'numbers':
         dataset = MNIST(root='./data', train=True, download=True, transform=transform)
 
     return torch.utils.data.DataLoader(dataset, batch_size=1, shuffle=True, num_workers=2)
