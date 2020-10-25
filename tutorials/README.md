@@ -8,13 +8,13 @@ This platform allows children to use build structure of deep learning pipeline w
 
 MineTorch allows us to use Machine Learning components in the form of blocks.
 
-## How to Add Datasets:
+### How to Add Dataset Block?:
 
 We can use datasets containing Numeric and Image data using Dataset block.
 
 ![datasets](Images/Datasets.gif)
 
-## How to Build Model Architecture:
+## How to Build Model Architecture?:
 
 Deep learning model is made of Multiple layers like Dense Layer, Convolution Layer, Activation Function etc. We have separate block for each of such components. The block associated with such layers allows us to choose hyper parameters of model using dropdown in the block.  
 
@@ -30,7 +30,7 @@ model = None
 model = nn.Sequential(*[nn.Conv2d(3, 36, 3, 1, 1), nn.Tanh(), nn.Conv2d(36, 64, 3, 1, 1), nn.Tanh(), nn.Conv2d(64, 128, 3, 1, 1), nn.Tanh(), nn.Dense(512, 10)])
 ```
 
-## How to Train Model:
+## How to Create Train Model block?:
 
 During Model training we perform following operations:
 1. Get data from Dataset
@@ -57,7 +57,7 @@ for count in range(10):
   bt.train(model,data)
 ```
 
-## How to Make Prediction:
+## How to Make Prediction Block?:
 
 For Prediction also we have made a simple block which takes data and model as input and returns model prediction.
 
