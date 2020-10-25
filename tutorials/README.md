@@ -14,7 +14,7 @@ We can use datasets containing Numeric and Image data using Dataset block.
 
 ![datasets](Images/Datasets.gif)
 
-## How to Build Model Architecture:
+### How to Build Model Architecture:
 
 A deep learning model is made of Multiple layers like Dense Layer, Convolution Layer, Activation Function, etc. We have a separate block for each of such components. The block associated with such layers allows us to choose hyperparameters of the model using a dropdown in the block.  
 
@@ -30,7 +30,7 @@ model = None
 model = nn.Sequential(*[nn.Conv2d(3, 36, 3, 1, 1), nn.Tanh(), nn.Conv2d(36, 64, 3, 1, 1), nn.Tanh(), nn.Conv2d(64, 128, 3, 1, 1), nn.Tanh(), nn.Dense(512, 10)])
 ```
 
-## How to Create a Train Model Block:
+### How to Create a Train Model Block:
 
 During Model training we perform the following operations:
 1. Get data from Dataset
@@ -57,7 +57,7 @@ for count in range(10):
   bt.train(model,data)
 ```
 
-## How to Make Prediction Block:
+### How to Make Prediction Block:
 
 For Prediction also we have made a simple block that takes data and model as input and returns model prediction.
 
