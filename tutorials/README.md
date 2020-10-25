@@ -42,7 +42,7 @@ For performing each of the above steps we have added blocks which takes input fr
 
 ![Training](Images/Training.gif)
 
-Here is the generated python code,
+Here is the generated python code:
 
 ```python
 dataset = None
