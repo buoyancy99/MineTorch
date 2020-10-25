@@ -8,7 +8,7 @@ This platform allows children to use the building structure of a deep learning p
 
 MineTorch allows us to use Machine Learning components in the form of blocks.
 
-### How to Add Dataset Block?:
+### How to Add Dataset Block:
 
 We can use datasets containing Numeric and Image data using Dataset block.
 
@@ -30,7 +30,7 @@ model = None
 model = nn.Sequential(*[nn.Conv2d(3, 36, 3, 1, 1), nn.Tanh(), nn.Conv2d(36, 64, 3, 1, 1), nn.Tanh(), nn.Conv2d(64, 128, 3, 1, 1), nn.Tanh(), nn.Dense(512, 10)])
 ```
 
-## How to Create a Train Model block?:
+## How to Create a Train Model Block:
 
 During Model training we perform the following operations:
 1. Get data from Dataset
