@@ -61,7 +61,7 @@ for count in range(10):
 
 For Prediction also we have made a simple block that takes data and model as input and returns model prediction.
 
-We can store that model prediction in one variable variable
+We can store that model prediction in one variable variable:
 
 ![Prediction](Images/Prediction.gif)
 
