@@ -61,8 +61,6 @@ Blockly.Blocks['nn_dense'] = {
         .appendField(new Blockly.FieldNumber(0, 0, 1024, 1), "in")
         .appendField("Out")
         .appendField(new Blockly.FieldNumber(0, 0, 1024, 1), "out")
-        .appendField("Activation")
-        .appendField(new Blockly.FieldDropdown([[{"src":"https://i.ibb.co/NmgSYPW/relu-1.png","width":20,"height":20,"alt":"*"},"relu"], [{"src":"https://i.ibb.co/1dVp7VR/tanh.png","width":20,"height":20,"alt":"*"},"tanh"], [{"src":"https://i.ibb.co/zm27KLn/sigmoid-1.png","width":20,"height":20,"alt":"*"},"sigmoid"], ["none","None"]]), "activation");
     this.setInputsInline(true);
     this.setOutput(true, null);
     this.setColour(15);
@@ -85,7 +83,6 @@ goog.require('Blockly.Python');
 Blockly.Python['nn_dense'] = function(block) {
   var number_in = block.getFieldValue('in');
   var number_out = block.getFieldValue('out');
-  var dropdown_activation = block.getFieldValue('activation');
   // TODO: Assemble Python into code variable.
   var code = 'nn.Dense(' + number_in + ', '+ number_out + ')';
   // TODO: Change ORDER_NONE to the correct strength.
@@ -183,7 +180,6 @@ The below code is will create a simple UI with Dense Folder
       <block type="nn_dense">
         <field name="in">0</field>
         <field name="out">0</field>
-        <field name="activation">relu</field>
       </block>
   </category>
   </xml>
