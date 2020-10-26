@@ -5,9 +5,17 @@ Not all components for trending Deep Learning projects, are available in MineTor
 
 ### What is Blockly?
 
-Blockly is a library that adds a visual code editor to web and mobile apps. The Blockly editor uses interlocking, graphical blocks to represent code concepts like variables, logical expressions, loops, and more. It allows users to apply programming principles without having to worry about syntax or the intimidation of a blinking cursor on the command line.
+Blockly is a library that adds a visual code editor to web and mobile apps. The Blockly editor uses interlocking - graphical blocks to represent code concepts like:
+* Logical expressions
+* Variables
+* Loops
 
-Below image shows a simple code when the condition `count > 256` the program will set the count to zero and print `Game Over`.
+It allows users to apply programming principles, without having to write syntax or using the command line.
+
+The below image shows a simple code with the condition 
+`count > 256` 
+The program will set the count to zero and then print
+`Game Over`
 ![blocklly_image](Images/simple_blockly.png)
 
 For more details check this [github](https://github.com/google/blockly) and [Project Page](https://developers.google.com/blockly/)
