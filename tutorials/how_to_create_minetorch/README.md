@@ -83,7 +83,7 @@ Blockly.Python['nn_dense'] = function(block) {
   var number_in = block.getFieldValue('in');
   var number_out = block.getFieldValue('out');
   // TODO: Assemble Python into code variable.
-  var code = 'nn.Dense(' + number_in + ', '+ number_out + ')';
+  var code = 'nn.Linear(' + number_in + ', '+ number_out + ')';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.Python.ORDER_NONE];
 };
