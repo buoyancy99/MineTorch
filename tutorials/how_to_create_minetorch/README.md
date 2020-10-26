@@ -1,6 +1,7 @@
 # How to Build MineTorch?
 
-Our app uses Blockly to build components of a deep learning pipeline. Deep Learning is a very dynamic field. We have to build a different model if the application changes. For newly researched deep learning things we might need to have component which is not currently available in MineTorch. For such need i will explain details to build Blocks in Blockly like we did to build MineTorch.
+Our app uses Blockly to build components of a Deep Learning pipeline. Deep Learning is a very dynamic field. If the application changes, we need to build a new model.
+Not all components for trending Deep Learning projects, are available in MineTorch. For such need, I will explain in detail how to build blocks in Blockly like we did to build MineTorch.
 
 ### What is Blockly?
 
