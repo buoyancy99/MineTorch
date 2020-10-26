@@ -192,6 +192,13 @@ The below code is will create a simple UI with Dense Folder
 ### Step7. Test HTML code in Browser
 we can test the above created html file by opening it in the browser
 
+The output will look like the below screenshot in the website
+![website](Images/output.png)
+
+If we check the python code it will be like below code
+```python
+nn.Dense(0, 0)
+```
 ## References:
 * https://github.com/google/blockly
 * https://developers.google.com/blockly/
