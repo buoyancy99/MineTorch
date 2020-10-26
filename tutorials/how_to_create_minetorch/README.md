@@ -74,6 +74,8 @@ Blockly.Blocks['nn_dense'] = {
 ### Step4. Write Python Code Generator for Block
 This code will help us to create python script in the UI. 
 
+we need to add below code in the `blockly/generators/python/demo.js`
+
 ```javascript
 'use strict';
 
