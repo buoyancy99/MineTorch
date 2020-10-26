@@ -14,6 +14,7 @@ It allows users to apply programming principles, without having to write syntax 
 
 The below image shows a simple code with the condition:
 `count > 256` 
+
 The program will set the count to zero and then print:
 `Game Over`
 
