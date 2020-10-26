@@ -35,6 +35,11 @@ We realized we needed to build Custom High Level Blocks for Deep Learning. We st
 
 I will explain details about creating Dense layer Block which can create Dense Layer according to the Pytorch Model in Python. 
 
+Our Goal is to create a Dense Layer Block which can take three input:
+1. In: Input Dimension of Dense Layer
+2. Out: Output Dimension of Dense Layer
+3. Activation: Give user a choice to select activation function like `Relu`, `Tanh`, and `Softmax` 
+
 ### Step1. Clone Blockly Github Repository
 ```
 git clone https://github.com/google/blockly.git
@@ -42,8 +47,8 @@ git clone https://github.com/google/blockly.git
 
 ### Step2. Create nn.js files
 We need to write three `nn.js` file in the below two location,
-1. blockly/blocks
-2. blockly/generators/python
+1. `blockly/blocks`
+2. `blockly/generators/python`
 
 ### Step3. Write Backend function for Block
 Our Goal is to create Dense Layer Block in `blockly/blocks/nn.js`
@@ -185,7 +190,7 @@ The below code is will create a simple UI with Dense Folder
 ```
 
 ### Step7. Test HTML code in Browser
-we can test the above created html file in the browser 
+we can test the above created html file by opening it in the browser
 
 ## References:
 * https://github.com/google/blockly
