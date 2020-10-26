@@ -35,10 +35,9 @@ We realized we needed to build Custom High Level Blocks for Deep Learning. We st
 
 I will explain details about creating Dense layer Block which can create Dense Layer according to the Pytorch Model in Python. 
 
-Our Goal is to create a Dense Layer Block which can take three input:
+Our Goal is to create a Dense Layer Block which can take two input:
 1. In: Input Dimension of Dense Layer
-2. Out: Output Dimension of Dense Layer
-3. Activation: Give user a choice to select activation function like `Relu`, `Tanh`, and `Softmax` 
+2. Out: Output Dimension of Dense Layer 
 
 ### Step1. Clone Blockly Github Repository
 ```
