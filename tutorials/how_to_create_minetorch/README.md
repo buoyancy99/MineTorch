@@ -24,9 +24,13 @@ The program will set the count to zero and then print
 
 For more details check this [github](https://github.com/google/blockly) and [Project Page](https://developers.google.com/blockly/)
 
-### How we choose to use Blockly?
+### Why Blockly?
 
-We wanted an interface that allows to add component in UI in the form block and by combining blocks we can generate logically connected deep learning block and python code. We come across blockly. It have some build in Blocks of Programming. We realized we need to Build Custom High Level Blocks for Deep Learning. We gone through [Developer Guide](https://developers.google.com/blockly/guides/configure/web/custom-blocks) to build custom blocks in blockly. 
+We wanted an interface that allows adding components in a User Interface, in the form of blocks.
+By combining blocks we can generate python code, and use it in a Deep Learning project.
+
+We came across Blockly, which already has some build-in programming blocks. 
+We realized we needed to build Custom High Level Blocks for Deep Learning. We started by going through this guide [Developer Guide](https://developers.google.com/blockly/guides/configure/web/custom-blocks) on how to build custom blocks in Blockly. 
   
 ### How to add Deep Learning Component?
 
