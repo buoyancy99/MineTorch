@@ -12,10 +12,14 @@ Blockly is a library that adds a visual code editor to web and mobile apps. The 
 
 It allows users to apply programming principles, without having to write syntax or using the command line.
 
-The below image shows a simple code with the condition 
+The below image shows a simple code with the condition
+
 `count > 256` 
+
 The program will set the count to zero and then print
+
 `Game Over`
+
 ![blocklly_image](Images/simple_blockly.png)
 
 For more details check this [github](https://github.com/google/blockly) and [Project Page](https://developers.google.com/blockly/)
