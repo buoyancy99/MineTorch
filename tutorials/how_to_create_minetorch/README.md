@@ -42,16 +42,16 @@ Our Goal is to create a Dense Layer Block which can take three input:
 
 ### Step1. Clone Blockly Github Repository
 ```
-git clone https://github.com/google/blockly.git
+git clone https://github.com/buoyancy99/MineTorch.git
 ```
 
-### Step2. Create nn.js files
-We need to write three `nn.js` file in the below two location,
+### Step2. Create javascript files for backend code
+We need to write three `demo.js` file in the below two location,
 1. `blockly/blocks`
 2. `blockly/generators/python`
 
 ### Step3. Write Backend function for Block
-Our Goal is to create Dense Layer Block in `blockly/blocks/nn.js`
+Our Goal is to create Dense Layer Block in `blockly/blocks/demo.js`
 ```javascript
 Blockly.Blocks['nn_dense'] = {
   init: function() {
@@ -94,8 +94,8 @@ Blockly.Python['nn_dense'] = function(block) {
 This will generate pytorch Dense Layer according to the user input.
 
 ### Step5. Create HTML file for UI
-we need to create an HTML file in the below folder. Lets say we are creating `minetorch.html` for UI Demo
-`blockly/demos/code/minetorch.html`
+we need to create an HTML file in the below folder. Lets say we are creating `demo.html` for UI Demo
+`blockly/demos/code/demo.html`
 
 ### Step6. Write HTML Code
 In the html file created in step.5 write UI Code code demo so that it can be tested easily,
@@ -112,10 +112,10 @@ The below code is will create a simple UI with Dense Folder
   <script src="/storage.js"></script>
   <script src="../../blockly_compressed.js"></script>
   <script src="../../blocks_compressed.js"></script>
-  <script src="../../blocks/nn.js"></script>
+  <script src="../../blocks/demo.js"></script>
   <script src="../../javascript_compressed.js"></script>
   <script src="../../python_compressed.js"></script>
-  <script src="../../generators/python/nn.js"></script>
+  <script src="../../generators/python/demo.js"></script>
   <script src="code.js"></script>
 
 </head>
@@ -177,7 +177,7 @@ The below code is will create a simple UI with Dense Folder
   <pre id="content_dart" class="content prettyprint lang-dart"></pre>
   <textarea id="content_xml" class="content" wrap="off"></textarea>
   <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-  <category name="NN" colour="#a5745b">
+  <category name="demo" colour="#a5745b">
       <block type="nn_dense">
         <field name="in">0</field>
         <field name="out">0</field>
